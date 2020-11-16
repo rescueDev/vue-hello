@@ -9,11 +9,14 @@
   </head>
   <body>
     <div id="root">
+      <!-- bottone -->
+      <div id="but-container">
+        <button @click="genFunction">Click Me</button>
+      </div>
+      <!-- titolo con messaggio -->
       <h1 v-model="message" v-bind:class="mieClassi">{{message}}</h1>
       <!-- collego all'immagine con v-bind image e alText di data -->
       <img v-bind:src="image" v-bind:alt="altText" v-bind:class="mieClassi" />
-      <!-- bottone -->
-      <button @click="genFunction">Click Me</button>
     </div>
 
     <script type="text/javascript" src="js/script.js"></script>
