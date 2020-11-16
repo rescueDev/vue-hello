@@ -1,0 +1,17 @@
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  background-color: #4db986;
+  font-size: large;
+  padding: 5px;
+}

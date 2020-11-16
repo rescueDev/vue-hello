@@ -3,12 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- Vue CDN -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   </head>
   <body>
     <div id="root">
-      <h1 id="messaggio"></h1>
+      <h1 v-model="message" v-bind:class="mieClassi">{{message}}</h1>
+      <!-- collego all'immagine con v-bind image e alText di data -->
+      <img v-bind:src="image" v-bind:alt="altText" v-bind:class="mieClassi" />
+      <!-- bottone -->
+      <button @click="genFunction">Click Me</button>
     </div>
 
     <script type="text/javascript" src="js/script.js"></script>
